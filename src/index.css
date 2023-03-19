@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+}
+
+*,
+*:after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 1rem;
+}
+
+a {
+  margin-right: 1rem;
+  color: rgb(97, 252, 59);
+}
+
+a:active {
+  color: rgb(7, 255, 255);
+}
+
+a:visited {
+  color: rgb(7, 255, 255);
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+.active {
+  font-weight: bold;
+  color: green;
+}
+
+hr {
+  margin: 2rem auto;
+}
