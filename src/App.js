@@ -22,22 +22,22 @@ function App() {
         </li>
         <li>Avoids re-rendering.</li>
         <li>
-          Hay que evitarlo en la medida de lo posible, pues podría ser más
-          costosa la tarea de memorización que el re-renderizado del componente.
+          It must be avoided as much as possible, since the memorization task
+          could be more expensive than the re-rendering of the component.
         </li>
         <li>
-          Úsalo, cuando:
+          The better way to use it is when:
           <ul>
-            <li>Tenemos muchos elementos renderizados en una lista.</li>
-            <li>Llamamos datos de APIs.</li>
-            <li>Un componente se vuelve muy pesado.</li>
-            <li>Salen alertas de rendimiento en la consola.</li>
+            <li>We have to many elements rendered in a list.</li>
+            <li>We make an uniques call to an API.</li>
+            <li>A component becomes really heavy.</li>
+            <li>We receive performance alerts in the console.</li>
           </ul>
         </li>
       </ul>
       <h3>
         <a
-          href="https://es.reactjs.org/docs/hooks-reference.html#usecallback"
+          href="https://react.dev/reference/react/useCallback"
           target="_blank"
           rel="noreferrer"
         >
