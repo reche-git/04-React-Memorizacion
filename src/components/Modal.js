@@ -7,7 +7,7 @@ const Modal = ({ children, isOpen, closeModal }) => {
       <div className="modal-container" onClick={handleModalContainerClick}>
         {children}
         <button className="ExplinationModalBtn" onClick={closeModal}>
-          <span>Okay!</span>
+          <span>Got it!</span>
           <svg
             viewBox="-5 -5 110 110"
             preserveAspectRatio="none"

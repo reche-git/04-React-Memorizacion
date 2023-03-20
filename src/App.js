@@ -15,17 +15,16 @@ function App() {
       </button>
       <Modal isOpen={isOpen} closeModal={closeModal}>
         <div className="ExplinationModal">
-          <h3>What is React Router?</h3>
+          <h3>Time to use Memoization</h3>
           <p>
-            React Router is a JavaScript framework that lets us handle client
-            and server-side routing in React applications. It enables the
-            creation of single-page web or mobile apps that allow navigating
-            without refreshing the page. It also allows us to use browser
-            history features while preserving the right application view.
+            In programming, memoization is an optimization technique that makes
+            applications more efficient and hence faster. It does this by
+            storing computation results in cache, and retrieving that same
+            information from the cache the next time it's needed instead of
+            computing it again.
           </p>
           <p>
-            Here you're gonna see the basics concepts on use to show my
-            understanding about this library.
+            Makes the reading of the code faster in future loads!
           </p>
           <p style={{ textAlign: "center" }}>
             <a
