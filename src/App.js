@@ -46,19 +46,18 @@ function App() {
       </h3>
       <ul>
         <li>
-          Memoriza una función, para no volverla a definir en cada render.
+          useCallback is a React Hook that lets you cache a function definition
+          between re-renders.
         </li>
         <li>
-          Úsalo siempre que se pase una función como <b>prop</b> a un componente
-          memorizado.
+          Use it every time you pass a function as a <b>prop</b> to a memoized
+          component
         </li>
-        <li>
-          Úsalo siempre que se pase una función como parámetro de un efecto.
-        </li>
+        <li>Use it when passing a function as a param of an effect.</li>
       </ul>
       <h3>
         <a
-          href="https://es.reactjs.org/docs/hooks-reference.html#usememo"
+          href="https://beta.reactjs.org/reference/react/useMemo"
           target="_blank"
           rel="noreferrer"
         >
@@ -67,10 +66,10 @@ function App() {
       </h3>
       <ul>
         <li>
-          Memoriza un valor calculado, es decir, el resultado de una función.
+          It memoize the value of a calculus, i.e. the result of a function.
         </li>
-        <li>Genera propiedades computadas.</li>
-        <li>Úsalo en procesos pesados.</li>
+        <li>It generates computed props.</li>
+        <li>It's recommended for demanding process.</li>
       </ul>
       <hr />
       <Counter />
