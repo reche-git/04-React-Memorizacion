@@ -60,7 +60,7 @@ function App() {
       </button>
       <Modal isOpen={isOpen2} closeModal={closeModal2}>
         <div className="ExplinationModal">
-          <h3>A higher-order component</h3>
+          <h3>A higher-order component to remember a component</h3>
           <code>const MemoComponent = memo(Component, arePropsEqual?)</code>
           <p>
             memo is a higher-order component that wraps around a component to
@@ -69,10 +69,17 @@ function App() {
             rendering to reuse the last rendered result.
           </p>
           <p>
-            In this case, memo is used in the component "CounterSon" to avoid
-            re-render a for loop that counts from 0 to 1000000000. Doing this,
-            everytime we change the props in the parent component, we don't need
-            to re-render the child.
+            In this case, memo is used in the component{" "}
+            <a
+              href="https://github.com/reche-git/04-React-Memorizacion/blob/master/src/components/CounterSon.js"
+              rel="noreferrer"
+              target="_blank"
+            >
+              CounterSon
+            </a>{" "}
+            to avoid re-render a for loop that counts from 0 to 1000000000.
+            Doing this, everytime we change the props in the parent component,
+            we don't need to re-render the child.
           </p>
         </div>
       </Modal>
@@ -105,8 +112,8 @@ function App() {
       </button>
       <Modal isOpen={isOpen3} closeModal={closeModal3}>
         <div className="ExplinationModal">
-          <h3>To remember</h3>
-          <code>const cachedFn = useCallback(fn, dependencies)</code>
+          <h3>To remember a function!</h3>
+          <code>‎ ‎ ‎ ‎ ‎ const cachedFn = useCallback(fn, dependencies)</code>
           <p>
             useCallback will return a memoized version of a function that only
             changes if one of the dependencies has changed. This is useful when
@@ -142,13 +149,24 @@ function App() {
       </button>
       <Modal isOpen={isOpen4} closeModal={closeModal4}>
         <div className="ExplinationModal">
-          <h3>BANANA</h3>
-          <code>banana code</code>
+          <h3>To remember a value!</h3>
+          <code>‎ ‎ ‎ const cachedValue = useMemo(Value, dependencies)</code>
           <p>
-            ...
+            useMemo Hook returns a memoized value. Think of memoization as
+            caching a value so that it does not need to be recalculated. The
+            useMemo Hook only runs when one of its dependencies update. This can
+            improve performance.
           </p>
           <p>
-            ...
+            Remember that loop in the{" "}
+            <a
+              href="https://github.com/reche-git/04-React-Memorizacion/blob/master/src/components/CounterSon.js"
+              rel="noreferrer"
+              target="_blank"
+            >
+              CounterSon Component
+            </a>{" "}
+            that counts from 0 to 1000000000? It was memoized too!
           </p>
         </div>
       </Modal>
