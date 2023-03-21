@@ -26,7 +26,7 @@ const CounterSon = ({ counter, add, substract }) => {
         <button onClick={add}>+</button>
       </nav>
       <h3>{counter}</h3>
-      <h3>{superNumber}</h3>
+      <h3>Loop number: {superNumber}</h3>
     </div>
   );
 };
