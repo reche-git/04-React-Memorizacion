@@ -121,10 +121,26 @@ function App() {
             reference equality to prevent unnecessary renders{" "}
           </p>
           <p>
-            The component "Counter" has two functions that allows you increase
-            or decrease your counter by one, those funtions are also passed to
-            his child "CounterSon". So, to not re-render the functions
-            everytime, it only re-renders when his dependencies change.
+            The component{" "}
+            <a
+              href="https://github.com/reche-git/04-React-Memorizacion/blob/master/src/components/Counter.js"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Counter
+            </a>{" "}
+            has two functions that allows you increase or decrease your counter
+            by one, those funtions are also passed to his child{" "}
+            <a
+              href="https://github.com/reche-git/04-React-Memorizacion/blob/master/src/components/CounterSon.js"
+              rel="noreferrer"
+              target="_blank"
+            >
+              CounterSon
+            </a>
+            .
+            So, to not re-render the functions everytime, it only re-renders
+            when his dependencies change.
           </p>
           <p>It works similar as the useEffect hook.</p>
         </div>
